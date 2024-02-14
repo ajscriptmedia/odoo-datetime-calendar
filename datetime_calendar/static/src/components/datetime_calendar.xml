@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-inherit="web.DateField" owl="1" t-inherit-mode="extension">
+        <xpath expr="//DatePicker" position="after">
+            <span t-if="props.value" t-out="calendar.islamic"/>
+        </xpath>
+    </t>
+    <t t-inherit="web.DateTimeField" owl="1" t-inherit-mode="extension">
+        <xpath expr="//DateTimePicker" position="after">
+            <span t-if="props.value" t-out="calendar.islamic"/>
+        </xpath>
+    </t>
+</templates>
