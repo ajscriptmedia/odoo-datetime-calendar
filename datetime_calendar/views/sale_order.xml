@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="sale_order_form_view_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.view.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="validity_date" position="attributes">
+                <attribute name="widget">date_hijri</attribute>
+            </field>
+            <field name="date_order" position="attributes">
+                <attribute name="widget">date_hijri</attribute>
+            </field>
+            <field name="commitment_date" position="attributes">
+                <attribute name="widget">date_hijri</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>

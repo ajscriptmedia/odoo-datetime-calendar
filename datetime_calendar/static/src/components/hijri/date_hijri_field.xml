@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="datetime_calendar.DateHijriField" owl="1">
+        <t t-if="props.readonly">
+            <span t-out="formattedValue"/>
+        </t>
+        <t t-else="">
+            <div class="position-relative">
+                <input type="text" class="o_input" t-att-id="hijriDatePickerId" t-on-blur="(e)=>this.onBlur(e)" t-att-value="formattedValue"/>
+            </div>
+        </t>
+    </t>
+</templates>

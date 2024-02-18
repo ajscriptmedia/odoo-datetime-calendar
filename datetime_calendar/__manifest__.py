@@ -6,13 +6,15 @@
     'sequence': -1,
     'description': """Datetime Calendar""",
     'category': 'Hidden',
-    'depends' : ['web'],
-    'data': [],
+    'depends' : ['web', 'sale'],
+    'data': [
+        'views/sale_order.xml'
+    ],
     'installable': True,
     'application': False,
     'assets': {
         'web.assets_backend': [
-            'datetime_calendar/static/src/components/*',
+            'datetime_calendar/static/src/components/hijri/*',
         ],
     },
 }
